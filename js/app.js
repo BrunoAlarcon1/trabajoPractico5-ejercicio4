@@ -1,5 +1,5 @@
 function actualizarReloj() {
-    const fecha = document.getElementById('fecha');
+  const fecha = document.getElementById("fecha");
   const reloj = document.getElementById("reloj");
   const fechaActual = new Date();
   let hora = fechaActual.getHours();
@@ -14,15 +14,14 @@ function actualizarReloj() {
     hora = hora - 12;
   }
 
-  const horaCompleta = `${hora}:${minutos}:${segundos} ${periodo}`;
+  const horaCompleta = `${hora} : ${minutos} : ${segundos} ${periodo}`;
 
-  if(fecha){
-    fecha.innerText =  `${fechaActual.getDate()} / ${fechaActual.getMonth()} / ${fechaActual.getFullYear()}`;
+  if (fecha) {
+    fecha.innerText = `${fechaActual.getDate()} / ${fechaActual.getMonth()} / ${fechaActual.getFullYear()}`;
   }
   if (reloj) {
     reloj.innerText = horaCompleta;
   }
-
 
   setTimeout(actualizarReloj, 1000);
 }
