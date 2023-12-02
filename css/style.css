@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+#reloj {
+  font-size: 3em;
+}
+#fecha {
+  font-size: 3em;
+}
